@@ -4,7 +4,7 @@ from github import Github
 
 
 def main():
-    github_access_token = dotenv_values(".env")["GITHUB_ACCESS_TOKEN"]
+    github_access_token = dotenv_values(".env")["GITHUB_TOKEN"]
     print(github_access_token)
 
 
