@@ -6,6 +6,7 @@ from github import Github
 
 def main():
     print(str(sys.argv))
+    print(vars(dotenv_values(".env")))
 
 
 if __name__ == "__main__":
