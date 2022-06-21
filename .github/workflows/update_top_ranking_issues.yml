@@ -11,8 +11,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
     name: updates top-ranking issues issue
-    # env:
-    #   GITHUB_TOKEN: ${{ github.token }}
+    with:
+      repo-token: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python
