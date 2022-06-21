@@ -13,8 +13,8 @@ jobs:
     name: updates top-ranking issues issue
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
       - name: Set up Python
+        uses: actions/setup-python@v4
         with:
           python-version: '3.10.5'
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
