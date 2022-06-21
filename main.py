@@ -4,7 +4,8 @@ from github import Github
 
 
 def main():
-    subprocess.run(["echo", "hi"])
+    github_access_token = dotenv_values(".env")["GITHUB_ACCESS_TOKEN"]
+    print(github_access_token)
 
 
 if __name__ == "__main__":
