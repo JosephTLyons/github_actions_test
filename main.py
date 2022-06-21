@@ -1,5 +1,10 @@
+import subprocess
+from dotenv import dotenv_values
+from github import Github
+
+
 def main():
-    print("Hi")
+    subprocess.run(["echo", "hi"])
 
 
 if __name__ == "__main__":
