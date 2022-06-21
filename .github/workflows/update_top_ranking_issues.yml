@@ -3,7 +3,7 @@ on:
     branches:
       - master
   issues:
-    types: [closed]
+    types: [opened, closed]
   schedule:
     - cron: '*/5 * * * *'
 
