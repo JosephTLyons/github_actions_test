@@ -11,8 +11,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
     name: updates top-ranking issues issue
-    env:
-      GITHUB_TOKEN: ${{ github.token }}
+    # env:
+    #   GITHUB_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python
@@ -22,4 +22,4 @@ jobs:
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
           cache: 'pip'
       - run: pip install -r requirements.txt
-      - run: python main.py
+      - run: python main.py ${{ github.token }}
