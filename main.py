@@ -5,8 +5,7 @@ from github import Github
 
 
 def main():
-    print(str(sys.argv))
-    print(vars(dotenv_values(".env")))
+    github = Github(sys.argv[1])
 
 
 if __name__ == "__main__":
