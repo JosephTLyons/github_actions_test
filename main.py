@@ -1,10 +1,11 @@
-import subprocess
+import sys
+
 from dotenv import dotenv_values
 from github import Github
 
 
 def main():
-    print(vars(dotenv_values(".env")))
+    print(str(sys.argv))
 
 
 if __name__ == "__main__":
