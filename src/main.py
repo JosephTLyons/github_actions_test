@@ -7,6 +7,7 @@ from github import Github
 def main():
     github_access_token = sys.argv[1]
     github = Github(github_access_token)
+
     repo_name = "JosephTLyons/action_minutes_test"
     repository = github.get_repo(repo_name)
 
