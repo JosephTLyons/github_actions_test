@@ -3,11 +3,12 @@ on:
     - cron:  '* * * * *'
 
 jobs:
-  my_first_job:
+  update_top_ranking_ranking_issues:
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
       with:
         python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
-    - run: python main.py
+    - name: Deploy
+      run: python main.py
