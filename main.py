@@ -4,8 +4,7 @@ from github import Github
 
 
 def main():
-    github_access_token = dotenv_values(".env")["GITHUB_TOKEN"]
-    print(github_access_token)
+    print(vars(dotenv_values(".env")))
 
 
 if __name__ == "__main__":
