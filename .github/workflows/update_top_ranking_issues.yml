@@ -8,9 +8,8 @@ on:
     - cron: "*/5 * * * *" # TODO: SCHEDULE CORRECTLY
 
 jobs:
-  update:
+  update_top_ranking_issue_issue:
     runs-on: ubuntu-latest
-    name: updates top-ranking issues issue
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
