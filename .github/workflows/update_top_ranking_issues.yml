@@ -3,9 +3,9 @@ on:
     - cron:  '* * * * *'
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
-    name: update
+    name: updates top-ranking issues issue
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python
